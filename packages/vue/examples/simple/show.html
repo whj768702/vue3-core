@@ -1,0 +1,16 @@
+<script src="../../dist/vue.global.js"></script>
+
+<div id="app">
+  <h1>{{ show }}</h1>
+</div>
+
+<script>
+const { createApp, ref } = Vue
+
+createApp({
+  setup () {
+      const show = ref('11');
+      return {show}
+  },
+}).mount('#app')
+</script>
